@@ -48,6 +48,9 @@ nav:
     - API Rate Limits: tips/api-rate-limit-handling.md
     - Cost Optimization: tips/cost-optimization.md
     - Security: tips/security-best-practices.md
+    - Browser Automation: tips/browser-automation.md
+    - Multi-Agent: tips/multi-agent.md
+    - Cron Scheduling: tips/cron-scheduling.md
   - 🔧 Tricks:
     - Automation: tricks/automation.md
     - Prompt Patterns: tricks/prompts.md
