@@ -46,6 +46,8 @@ nav:
     - Tool Usage: tips/tools.md
     - Communication: tips/communication.md
     - API Rate Limits: tips/api-rate-limit-handling.md
+    - Cost Optimization: tips/cost-optimization.md
+    - Security: tips/security-best-practices.md
   - 🔧 Tricks:
     - Automation: tricks/automation.md
     - Prompt Patterns: tricks/prompts.md
