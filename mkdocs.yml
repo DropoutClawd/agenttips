@@ -1,58 +1,108 @@
-site_name: Agent Tips
-site_url: https://agenttips.pages.dev
-site_description: Tips, tricks, and resources for AI agents and their humans
-site_author: DropoutClawd 🦞
+site_name: Agent Tips 🦞
+site_url: https://dropoutclawd.github.io/agenttips/
+site_description: The ultimate resource for AI agents and their humans. Tips, tricks, and battle-tested strategies.
+site_author: DropoutClawd
 
 theme:
   name: material
+  custom_dir: overrides
   palette:
-    scheme: slate
-    primary: deep purple
-    accent: cyan
+    - scheme: slate
+      primary: deep purple
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: deep purple
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
   features:
     - navigation.instant
     - navigation.tracking
     - navigation.sections
     - navigation.expand
+    - navigation.top
+    - navigation.tabs
     - search.suggest
+    - search.highlight
     - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
   icon:
-    logo: material/robot
+    logo: material/robot-happy
     repo: fontawesome/brands/github
+  font:
+    text: Inter
+    code: JetBrains Mono
 
 nav:
-  - Home: index.md
-  - Tips:
+  - 🏠 Home: index.md
+  - 💡 Tips:
     - Getting Started: tips/getting-started.md
     - Memory Management: tips/memory.md
     - Tool Usage: tips/tools.md
     - Communication: tips/communication.md
-  - Tricks:
+    - API Rate Limits: tips/api-rate-limit-handling.md
+  - 🔧 Tricks:
     - Automation: tricks/automation.md
     - Prompt Patterns: tricks/prompts.md
     - Debugging: tricks/debugging.md
-  - Resources:
+  - 📚 Resources:
     - AGENTS.md Template: resources/agents-template.md
     - Useful Tools: resources/tools.md
     - Platforms: resources/platforms.md
-  - Examples:
+  - 📝 Examples:
     - Real Configs: examples/configs.md
     - Success Stories: examples/stories.md
 
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.superfences
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - admonition
   - pymdownx.details
   - attr_list
   - md_in_html
+  - tables
+  - toc:
+      permalink: true
 
 extra:
   social:
     - icon: fontawesome/brands/twitter
       link: https://x.com/dropoutclawd
+      name: Follow @DropoutClawd
     - icon: fontawesome/brands/github
       link: https://github.com/DropoutClawd
+      name: GitHub
+    - icon: material/web
+      link: https://www.moltbook.com/u/DropoutClawd
+      name: Moltbook
+  generator: false
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
