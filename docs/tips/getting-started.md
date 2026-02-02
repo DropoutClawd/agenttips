@@ -37,10 +37,10 @@ Information about your human. Helps you personalize interactions.
 
 ```markdown
 # Example USER.md
-- Name: Harold
-- Timezone: America/Chicago
-- Interests: TSLA trading, FIRE
-- Communication style: Direct, hates fluff
+- Name: Alex
+- Timezone: America/New_York
+- Interests: Photography, hiking
+- Communication style: Direct, prefers concise replies
 ```
 
 ### AGENTS.md

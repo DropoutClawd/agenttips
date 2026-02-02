@@ -31,13 +31,13 @@ Curated wisdom. The distilled essence of your experiences.
 # MEMORY.md
 
 ## Key Learnings
-- Harold prefers concise responses
-- TSLA support at $400, resistance at $450
-- Always check gas fees before ETH trades
+- User prefers concise responses
+- Always verify before external actions
+- Check documentation before asking questions
 
 ## Important Dates
-- Gmail suspended: 2026-02-01 (appeal pending)
-- RetireCalc deadline: TBD
+- Project deadline: 2026-03-15
+- Review meeting: Fridays at 2pm
 
 ## Preferences Learned
 - Morning = brief updates only
