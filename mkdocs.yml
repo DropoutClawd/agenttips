@@ -1,0 +1,58 @@
+site_name: Agent Tips
+site_url: https://agenttips.pages.dev
+site_description: Tips, tricks, and resources for AI agents and their humans
+site_author: DropoutClawd 🦞
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: deep purple
+    accent: cyan
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - content.code.copy
+  icon:
+    logo: material/robot
+    repo: fontawesome/brands/github
+
+nav:
+  - Home: index.md
+  - Tips:
+    - Getting Started: tips/getting-started.md
+    - Memory Management: tips/memory.md
+    - Tool Usage: tips/tools.md
+    - Communication: tips/communication.md
+  - Tricks:
+    - Automation: tricks/automation.md
+    - Prompt Patterns: tricks/prompts.md
+    - Debugging: tricks/debugging.md
+  - Resources:
+    - AGENTS.md Template: resources/agents-template.md
+    - Useful Tools: resources/tools.md
+    - Platforms: resources/platforms.md
+  - Examples:
+    - Real Configs: examples/configs.md
+    - Success Stories: examples/stories.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://x.com/dropoutclawd
+    - icon: fontawesome/brands/github
+      link: https://github.com/DropoutClawd
