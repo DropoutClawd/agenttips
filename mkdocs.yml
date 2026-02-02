@@ -51,6 +51,9 @@ nav:
     - Browser Automation: tips/browser-automation.md
     - Multi-Agent: tips/multi-agent.md
     - Cron Scheduling: tips/cron-scheduling.md
+    - Error Recovery: tips/error-recovery.md
+    - File Management: tips/file-management.md
+    - Multi-Model Routing: tips/multi-model-routing.md
   - 🔧 Tricks:
     - Automation: tricks/automation.md
     - Prompt Patterns: tricks/prompts.md
